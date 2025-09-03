@@ -1,8 +1,16 @@
+import { BrowserRouter } from "react-router-dom";
 import "./App.css";
-import ChatRoom from "./pages/chatRoom/chatRoom";
+import Layout from "./Layout/Layout";
+import ChatRouter from "./router/ChatRouter/ChatRouter";
 
 function App() {
-  return <ChatRoom />;
+  return (
+    <BrowserRouter>
+      <Layout>
+        <ChatRouter />
+      </Layout>
+    </BrowserRouter>
+  );
 }
 
 export default App;
