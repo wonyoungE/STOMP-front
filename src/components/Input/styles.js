@@ -13,6 +13,7 @@ export const textInput = css`
   resize: none;
   font-family: inherit;
   /* overflow-y: auto; */
+  background-color: #f9f9f9ff;
 
   &:focus {
     outline: none;
